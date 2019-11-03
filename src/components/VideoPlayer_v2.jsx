@@ -122,8 +122,8 @@ export class VideoPlayerV2 extends Component {
     //  [x] - Play event
     //  [x] - Pause event
     //  [ ] - Seek event
-    //  [ ] - loading and changing subtitles
-    //  [ ] - changing video quality
+    //  [x] - loading and changing subtitles
+    //  [x] - changing video quality
 
     handleProgress = () => {
         let { duration, currentTime, buffered } =  this.video.current;
@@ -174,7 +174,6 @@ export class VideoPlayerV2 extends Component {
 
     handleQualityChange = e => {
         this.hls.currentLevel = e.currentTarget.value;
-
     }
     //#endregion
 
